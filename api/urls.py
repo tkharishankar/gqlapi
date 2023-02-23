@@ -7,6 +7,5 @@ from . import views
 
 urlpatterns = [
     path('', views.getRoutes),
-    path('projects/', views.getProjects),
     path('users/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
 ]
